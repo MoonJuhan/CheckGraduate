@@ -1,0 +1,19 @@
+{
+  "name": "nodejs_server",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node index.js"
+  },
+  "description": "NodeJS Tutorial Server",
+  "author": {
+    "name": "kkk"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "cors": "^2.8.5",
+    "express": "^4.16.3",
+    "morgan": "^1.10.0",
+    "uuid": "^3.2.1"
+  }
+}
