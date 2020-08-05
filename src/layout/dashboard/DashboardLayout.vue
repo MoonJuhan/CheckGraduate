@@ -3,10 +3,11 @@
     <side-bar>
       <template slot="links">
         <sidebar-link
-          to="/dashboard"
-          :name="$t('sidebar.dashboard')"
+          to="/overview"
+          :name="$t('overview')"
           icon="tim-icons icon-chart-pie-36"
         />
+        <!-- <sidebar-link to="/detail" :name="$t('detail')" icon="tim-icons icon-pin" /> -->
       </template>
     </side-bar>
     <div class="main-panel">
@@ -18,8 +19,6 @@
     </div>
   </div>
 </template>
-<style lang="scss">
-</style>
 <script>
 import TopNavbar from "./TopNavbar.vue";
 import ContentFooter from "./ContentFooter.vue";

@@ -3,18 +3,18 @@ import DashboardLayout from "@/layout/dashboard/DashboardLayout.vue";
 import NotFound from "@/pages/NotFoundPage.vue";
 
 // Admin pages
-const Dashboard = () => import(/* webpackChunkName: "dashboard" */"@/pages/Dashboard.vue");
+const Overview = () => import("@/pages/Dashboard.vue");
 
 const routes = [
   {
     path: "/",
     component: DashboardLayout,
-    redirect: "/dashboard",
+    redirect: "/overview",
     children: [
       {
-        path: "dashboard",
-        name: "dashboard",
-        component: Dashboard
+        path: "overview",
+        name: "overview",
+        component: Overview
       },
     ]
   },
